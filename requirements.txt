@@ -1,0 +1,17 @@
+# Phase 1: 数据获取与处理
+akshare>=1.12.0
+pandas>=2.0.0
+numpy>=1.24.0
+openpyxl>=3.1.0  # 让 pandas 能读 iFinD 导出的 .xlsx 文件
+
+# Phase 2: 可视化
+matplotlib>=3.7.0
+
+# Phase 3: AI Agent(用 DeepSeek,通过 OpenAI 兼容接口调用)
+openai>=1.40.0
+python-dotenv>=1.0.0
+pypdf>=4.0.0
+feedparser>=6.0.0
+
+# Phase 4(可选): 简单 Web 界面
+streamlit>=1.28.0

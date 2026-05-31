@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+env/
+*.egg-info/
+
+# 环境变量与密钥(非常重要:不要把 API key 提交到 git)
+.env
+*.key
+secrets.json
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+Thumbs.db
+.DS_Store
+
+# 数据文件(可能较大,不上传 git;保留 .gitkeep 让目录结构存在)
+data/*.csv
+data/*.xlsx
+data/*.xls
+data/*.pdf
+data/news_input.txt           # 用户运行时粘贴新闻的临时文件
+!data/.gitkeep
+
+# 图表与 Agent 自动产出(同上)
+outputs/*.png
+outputs/*.jpg
+outputs/*.pdf
+outputs/*.txt                 # Agent 生成的文本报告(自动归档,不入 git)
+outputs/*.json                # Agent 生成的 JSON 结构化输出
+!outputs/.gitkeep
+# 注:之前提交过几份示例输出作为「样例展示」,会继续被跟踪;
+# 上面规则只影响新生成的文件。
+
+# Jupyter
+.ipynb_checkpoints/
